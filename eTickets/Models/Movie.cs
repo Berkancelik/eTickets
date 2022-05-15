@@ -1,5 +1,6 @@
 ﻿using eTickets.Data;
 using System;
+using System.Collections.Generic;
 
 namespace eTickets.Models
 {
@@ -13,5 +14,8 @@ namespace eTickets.Models
         public DateTime StartDate{ get; set; }
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
+        public List<ActorMovie> ActorMovies  { get; set; }
+        public int CinemaId { get; set; }
+        public Cinema  Cinema { get; set; }
     }
 }
